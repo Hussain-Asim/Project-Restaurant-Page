@@ -15,4 +15,19 @@ export default {
             template: "./src/template.html",
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+            },
+            // webpack.config.js
+            // {
+            //     test: /\.html$/i,
+            //     use: ["html-loader"],
+            // }
+
+        ]
+    }
+
 };
